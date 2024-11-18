@@ -38,7 +38,9 @@ const { isDark } = Astro.props;
     <meta property="twitter:image:height" content="1066" />
     <meta property="twitter:image" content="https://ddimov.dev/image.png" />
   </head>
-  <body class="flex min-h-screen flex-col bg-background text-foreground">
-    <slot />
+  <body class="bg-background text-foreground">
+    <div class="flex flex-col min-h-screen">
+      <slot />
+    </div>
   </body>
 </html>
