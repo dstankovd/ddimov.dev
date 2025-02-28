@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const poppins = Poppins({
   weight: "500",
+  subsets: ["latin", "latin-ext"],
 });
 
 export const metadata: Metadata = {
