@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 h-12 py-2 z-10">
-      <nav className="max-w-4xl mx-auto h-full flex items-center justify-end gap-2">
+      <nav className="max-w-4xl mx-auto h-full flex items-center justify-end gap-2 p-6">
         <Button
           variant="ghost"
           size="icon"

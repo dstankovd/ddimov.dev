@@ -1,4 +1,14 @@
+import { Card } from "@/components/ui/card";
 import Image from "next/image";
+
+const projects = [
+  {
+    title: "Guess that country",
+    description:
+      "World capitals and flags quiz. Fun and fast, built with Next.js.",
+    href: "http://guess-the-country.ddimov.dev/",
+  },
+];
 
 export default function Home() {
   return (
@@ -24,8 +34,14 @@ export default function Home() {
             >
               Dreamshot
             </a>
-            , where we create online games and innovative products.
+            , where we create online games and innovative products. In my free
+            time I&apos;m working on:
           </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            {projects.map((project, i) => (
+              <Card key={i} {...project}></Card>
+            ))}
+          </div>
         </div>
       </section>
     </div>
