@@ -36,7 +36,7 @@ export default function RootLayout({
       >
         <Script
           defer
-          data-domain="ddimov.com"
+          data-domain="ddimov.dev"
           src="https://plausible.io/js/script.js"
         />
         <ThemeProvider
