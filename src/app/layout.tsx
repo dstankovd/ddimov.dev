@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import Script from "next/script";
 
 const poppins = Poppins({
   weight: "500",
@@ -33,6 +34,11 @@ export default function RootLayout({
       <body
         className={`${poppins.className} antialiased bg-background text-foreground`}
       >
+        <Script
+          defer
+          data-domain="ddimov.com"
+          src="https://plausible.io/js/script.js"
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
