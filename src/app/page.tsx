@@ -3,6 +3,11 @@ import Image from "next/image";
 
 const projects = [
   {
+    title: "Write or fade",
+    description: "A writing app that fades your text if you stop typing.",
+    href: "http://write-or-fade.ddimov.dev/",
+  },
+  {
     title: "Guess that country",
     description:
       "World capitals and flags quiz. Fun and fast, built with Next.js.",
